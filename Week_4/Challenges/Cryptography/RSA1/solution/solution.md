@@ -1,0 +1,30 @@
+# RSA1
+
+## Write-up
+
+```python
+from Crypto.Util.number import long_to_bytes,inverse
+""" n is relatively small , so we cant factorize it easily """ 
+enc  = 855250390942349186694434930565276356988081013824109359558996403258524748186922178276880739134617
+
+ 
+p = 9942874965373398689
+q = 102411157768469768587484356311902427789461430190314198242306101223897141593967
+
+N = p * q
+e = 65537
+phi = (p-1) * (q-1)
+d = inverse(e,phi)
+
+flag = long_to_bytes(pow(enc,d,N)).decode()
+print(flag)
+```
+
+## Flag
+
+`gomycode{U_5h0uld_U53_L4rg3_Numb3r5}`
+
+## More Information
+
+- https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-1/
+- https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-2/
