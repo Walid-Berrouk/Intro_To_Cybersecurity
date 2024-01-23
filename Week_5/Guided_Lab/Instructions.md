@@ -274,3 +274,11 @@ It is very simple to save data from an unencrypted website as well. To do that :
 ## More Information
 
 - PCAP Samples: https://wiki.wireshark.org/SampleCaptures#sample-captures
+- Wireshark Tutorials with commands:
+  - https://hackertarget.com/tshark-tutorial-and-filter-examples/
+  - https://unit42.paloaltonetworks.com/using-wireshark-exporting-objects-from-a-pcap/
+- Some TryHackMe Rooms to check:
+  - https://tryhackme.com/room/whatisnetworking
+  - https://tryhackme.com/room/introtolan
+  - https://tryhackme.com/room/introtonetworking
+  - https://tryhackme.com/room/dnsindetail
